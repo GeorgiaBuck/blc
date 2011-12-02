@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+  	<title><%= title %></title>
+  	<%= csrf_meta_tag %>
+		<%= render 'layouts/stylesheets' %>
+	</head>
+
+	<body class="twoColFixLtHdr">	
+		<%= render 'layouts/header.html.erb' %>
+		<section class="round">
+			<% flash.each do |key, value| %>
+				<div class="flash <%= key %>"><%= value %></div>
+			<% end %>
+			<%= yield %>
+		</section>
+
+		<%= render 'layouts/footer.html.erb' %>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<h1 class="index">Breakthrough Living Class Members</h1>
+<!--
+	<% if notice %>
+		<p id="notice"><%= notice %></p>
+	<% end %>
+-->
+<div id="name_list">
+  
+		<% @users.each do |user| %>
+
+		<li><%= user.first_name + " " + user.last_name %>
+    		|  <%= link_to 'Show', user %>
+				<% if current_user.admin? %>
+					<%= link_to "delete", user, :method => :delete, :confirm => "Are you sure?", :title => "Delete #{user.name}" %>
+					<% end %>
+  </li>
+<% end %>
+
+
+</div>
+<br />
+<div class="direction">
+<%= link_to 'Home', :home %>
+</div>

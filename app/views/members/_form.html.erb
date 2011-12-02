@@ -1,0 +1,71 @@
+<div class="blc_form">
+
+<%= form_for(@member) do |f| %>
+  <% if @member.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@member.errors.count, "error") %> prohibited this member from being saved:</h2>
+
+      <ul>
+      <% @member.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<fieldset>
+		<legend>Enter Member Details</legend>
+		
+  <div>
+    <%= f.label :last_name %>:
+    <%= f.text_field :last_name, :size => 40 %>
+  </div>
+
+  <div>
+    <%= f.label :first_name %>:
+    <%= f.text_field :first_name, :size => 40 %>
+  </div>
+
+  <div>
+    <%= f.label :address_id %>:
+    <%= f.text_field :address_id, :size => 40 %>
+  </div>
+
+  <div>
+    <%= f.label :email %>:
+    <%= f.text_field :email, :size => 40 %>
+  </div>
+
+  <div>
+    <%= f.label :spouse_id %>:
+    <%= f.text_field :spouse_id, :size => 40 %>
+  </div>
+
+	<div>
+		<%= f.label :password %>:
+		<%= f.password_field :password, :size => 40 %>
+	</div>
+		
+
+	<div>
+		<%= f.label :password_confirmation, 'Confirm Password' %>:
+		<%= f.password_field :password_confirmation, :size => 40 %>
+	</div>
+	
+  <div>
+    <%= f.label :telephone_id %>:
+    <%= f.text_field :telephone_id, :size =>14 %>
+  </div>
+
+	<div>
+		<%= f.label 'Image' %>:
+		<%= f.text_field :image_id %>
+	</div>
+  <div>
+    <%= f.submit %>
+  </div>
+
+	</fieldset>
+<% end %>
+
+</div>

@@ -1,0 +1,162 @@
+body {
+	margin: 		0;
+	padding:		0;
+	text-align:	center;
+	color:			#000000;
+	background-color:		#0CF;
+	font-family:				verdana, arial, helvetica, sans-serif;
+	font-size:					100%;
+	text-decoration:		none;
+	top:								0px;
+}
+
+.twoColFixLtHdr #container {
+	width:						780px;
+	background:				#FFFFFF;
+	text-align:				justify;
+	padding:					0px;
+	margin-top:				0px;
+	margin-right:			auto;
+	margin-bottom:		0px;
+	margin-left:			auto;
+}
+
+.twoColFixLtHdr #header {
+	background-color:	#6CF;
+	text-align:				center;
+	border-top:				0px;
+	width:						780px;
+	padding-top:			0px;
+	padding-right:		0px;
+	padding-bottom:		0px;
+	padding-left:			0px;
+	margin-right:			auto;
+	margin-left:			auto;
+}
+
+.twoColFixLtHdr #header h1 {
+	margin:						0;
+	width:						780px;
+	padding-top:			10px;
+	padding-right:		0px;
+	padding-bottom:		10px;
+	padding-left:			0px;
+	height:						200px;
+	background-color:	#999;
+}
+
+.warning {
+	color:						#000;
+	# font-weight:			bold;
+}
+
+.twoColFixLtHdr #sidebar1 {
+	float:						left;
+	width:						200px;
+	padding-top:			15px;
+	padding-right:		10px;
+	padding-bottom:		0px;
+	padding-left:			20px;
+	height:						550px;
+	background-color:	#FF0;
+}
+
+.twoColFixLtHdr #mainContent {
+	margin:						0 0 0 250px;
+	padding:					0 20px;
+}
+
+.twoColFixLtHdr #footer {
+	padding:					0 10px 0 20px;
+	font-family:			arial, helvetica, sans-serif;
+	font-size:				9px;
+	font-style:				italic;
+	color:						#000;
+	background-color:	#0cf;
+}
+
+.twoColFixLtHdr #footer p {
+	margin:						0;
+	padding:					10px 0;
+}
+
+#topMenuBar {
+	font-size:				.8em;
+	background-color:	#3ff;
+	color:						#fff;
+	margin:						0px;
+	padding-top:			2px;
+	padding-right:		2px;
+	padding-bottom:		2px;
+	padding-left:			210px;
+}
+
+#topMenuBar ul {
+	margin:						0px;
+	padding:					0px;
+}
+
+#topMenuBar ul li {
+	display:					inline;
+	margin-right:			20px;
+	list-style-type:	none;
+	text-align:				center;
+	margin-left:			20px;
+	
+}
+
+#topeMenuBar a:link {
+	color:						#F0C;
+	text-decoration:	underline;
+	display:					inline;
+}
+
+#topMenuBar a:hover {
+	text-decoration:	blink;
+	color:						#000;
+	background-color:	#fff;
+}
+
+#topMenuBar a:visited {
+	color:						#F3C;
+	text-decoration:	none;
+}
+
+a:hover {
+	text-decoration:	underline;
+	color:						#FFF;
+	background-color:	#000;
+}
+
+.announcehead {
+	color:						#F00;
+	text-decoration:	none; /* change to 'blink' if it is a new announcement */
+}
+
+.announcements {
+	float:						right;
+	height:						auto;
+	width:						500px;
+	padding:					15px;
+}
+
+body, td, th {
+	color:						#000;
+}
+
+.clearfloat {
+	clear:						both;
+	height:						0;
+	font-size:				1px;
+	line-height:			0px;
+}
+
+.fltrt {
+	float:						right;
+	margin-left:			8px;
+}
+
+.fltlft {
+	float:						left;
+	margin-right:			8px;
+}

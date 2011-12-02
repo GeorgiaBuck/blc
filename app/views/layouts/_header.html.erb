@@ -1,0 +1,23 @@
+<div id="header">
+	<%= image_tag("head-photo.jpg", :alt => "Breakthrough Living Class Image") %>
+</div>
+<div id="container">
+	<nav>
+		<ul id="nav">
+			<% if signed_in? %>
+				<% if current_user.admin? %>
+					<li id="nav_ad"><%= link_to 'Admin', '#' %></li>
+				<% end %>
+			<% end %>
+			<li id="nav_hom"><%= link_to "Home", :home %></li>
+			<li id="pray"><%= link_to "Prayers", '#' %></li>
+			<li id="event"><%= link_to "Events", :events %></li>
+			<% if !signed_in? %>
+			<li id="sign"><%= link_to "Sign in", signin_path %></li>
+			<% else %>
+			<li id="sign"><%= link_to "Sign out", signout_path, :method => :delete %></li>
+			<% end %>
+			<li id="help"><%= link_to "Help", :help %></li>
+		</ul>
+	</nav> 
+</div>

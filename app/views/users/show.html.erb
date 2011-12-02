@@ -1,0 +1,72 @@
+<p id="notice"><%= notice %></p>
+
+<% if @user.image? %>
+<div class="image">
+	<%= image_tag(@user.image, :class => "round") %>
+</div>
+<% else %>
+<div class="image_unavailable">
+	<p>Image Unavailable</p>
+	<p>Please submit a picture<br />
+		 or have one taken <br />
+		before class. </p>
+</div>
+<% end %>
+
+
+<div class="member_info">
+	<h1>
+		<p>
+  		Name:
+  		<%= @user.name %>
+		</p>
+	</h1>
+<% if @user.spouse != "" %>
+<p>
+  	<b>Spouse:</b>
+  	<%= @user.spouse %>
+	</p>
+<% end %>
+	<p>
+  	<b>Address:</b>
+  	<%= @user.address %>
+	</p>
+
+	<p>
+  	<b>City:</b>
+  	<%= @user.city %>
+	</p>
+
+	<p>
+  	<b>State:</b>
+  	<%= @user.state %>
+	</p>
+
+	<p>
+  	<b>Zip:</b>
+  	<%= @user.zip %>
+	</p>
+
+	<p>
+  	<b>Telephone:</b>
+  	<%= @user.telephone %>
+	</p>
+
+<% if @user.cellphone != "" %>
+	<p>
+  	<b>Cellphone:</b>
+  	<%= @user.cellphone %>
+	</p>
+<% end %>
+	<p>
+  	<b>Email:</b>
+  	<%= @user.email %>
+	</p>
+
+</div>
+<div class="direction">
+<% if @user == current_user || current_user.admin? %>
+<%= link_to 'Edit', edit_user_path(@user) %>
+<% end %>
+<%= link_to 'Membership list', users_path %>
+</div> 

@@ -1,0 +1,36 @@
+<!-- Provides a listing of the ministries available in the class, along with a   description. Available to all who access the web site. The ability to edit  or remove a ministry, however, is limited to the admin user
+-->
+<div id="ministry_list">
+	<h1 class="index">Breakthrough Living Class Ministries</h1>
+
+	<table>
+
+		<% @ministries.each do |ministry| %>
+  	<tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    	<td></td>
+    	<td class="list_description">
+				<dl>
+					<dt><%= ministry.title %></dt>
+					<dd><%= ministry.description %></dd>
+				</dl>
+			</td>
+			<% if signed_in? %>
+				<% if current_user.admin? %>
+					<td class="list_actions">
+    				<%= link_to 'Show', ministry %>
+    				<%= link_to 'Edit', edit_ministry_path(ministry) %>
+    				<%= link_to 'Destroy', ministry, :confirm => 'Are you sure?', :method => :delete %>
+					</td>
+				<% end %>
+			<% end %>
+  	</tr>
+		<% end %>
+	</table>
+</div>
+
+<br />
+<% if signed_in? %>
+	<% if current_user.admin? %>
+			<%= link_to 'New Ministry', new_ministry_path %>
+		<% end %>
+	<% end %>

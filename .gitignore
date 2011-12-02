@@ -1,0 +1,13 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+<<<<<<< HEAD
+tmp/**/*
+doc/api
+doc/app
+*.swp
+*~
+.DS_Store
+=======
+>>>>>>> 19ccb2063dd62ec2cc891bd5ca66224672edcb3a

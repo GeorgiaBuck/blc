@@ -1,0 +1,1 @@
+2011/10/07 21:04:48 [error] 44787#0: *4 "/Users/bucklandlo/ruby_projects/blc/script/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", host: "0.0.0.0"

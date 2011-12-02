@@ -1,0 +1,45 @@
+<div id="sidebar1">
+	<% if @user != current_user %>
+			<h3><%= link_to 'Membership', users_path %></h3>
+			<hr />
+			<hr />
+
+		<% else %>
+			<h3><%= link_to "New Member Sign Up", signup_path, :class => "signup_button round" %></h3>
+	<% end %>
+	<br />
+	<h3><%= link_to "Ministries", :controller => "ministries", :action => "index" %></h3>
+	<p>We have several ministries within our class that foster fellowship and permit class members to be involved and contribute to the class.</p>
+		<div id="ministryList">
+			<ul>
+				<%= render(:partial => 'minlist') %>
+			</ul>
+		</div>
+		<hr />
+		<hr />
+				<p><a href="http://vimeo.com/23296379" target="_self" title="videos">Lesson Videos</a></p>
+</div>
+<!-- end #sidebar1 -->
+<div id="mainContent">
+	<h1>Welcome</h1>
+	<p>Welcome to the site of the Breakthrough Living Sunday School Class. The class meets each Sunday at 9:00 a.m. in Room 237 at
+<a href="http://www.apostles.org">The Church of the Apostles</a> in Atlanta, Georgia, which is located on Northside Parkway adjacent and parallel to Interstate 75 at 3585 Northside Parkway, NW, Atlanta, Georgia 30327.
+		Our class is led by Bruce Cook and Pat MacMillian, biblical scholars with a wealth of information about the Bible, the early history of the church, and the geography of the Mediterranean.</p>
+		<p></p>
+		<p>We always welcome new members to our class. You will find that we are a small family of caring and sharing apostles of Christ.</p>
+		<h2>What we are about</h2>
+		<p>Our class provides an in-depth look at the Bible. This year, we will be looking at the heroes of the Bible. Along the way, we have fun together and build relationships with one another while we seek ways to expand our outreach. </p>
+
+</div> <!-- end of #mainContent -->
+<div id="lessons">
+	<h3>LESSONS:</h3>
+	<h4 class="lesson">Last Sunday: Gideon - Judges 7</h4>
+
+</div> <!-- end of #lessons -->
+<div id="announcements">
+	<h3 id="announcehead">ANNOUNCEMENTS:</h3>
+		<li>Our class lessons are now available on-line. Just click on the &quot;Lesson Videos&quot; link (above). You don't have to sign in to watch.</li>
+		<br />
+</div>
+<br class="clearfloat" />
+		

@@ -1,0 +1,32 @@
+<<<<<<< HEAD
+#
+#++
+#= BREAKTHROUGH LIVING CLASS
+#
+#This is a Sunday School class web site. The membership list is closed to class members who have signed in
+and been validated. Once a member signs in, they will remain signed in until they log out. Once they have signed 
+in, they will be able to access the membership list, see who is involved in the various ministries, see pictures
+#of the members, and leave messages.
+
+# The site has two parts --
+#* The public view
+#* The membership view
+
+#The public has access to the initial title page, the videos, the events page, and the list of ministries.
+
+#The membership has access to the same pages as the public, but also has access to:
+#* The membership list
+#* The ministries list, with members names
+#* The forum area
+	
+#Membership access is controlled with digitally coded passwords. The actual password is not stored
+#within the database. Instead, we use a seed code that, when combined with the user's password, 
+#creates the access code for the member.
+
+#All questions should be sent to blc@bucklandlaw.com.
+
+
+=======
+Use this README file to introduce your application and point to useful places in the API for learning more.
+>>>>>>> 19ccb2063dd62ec2cc891bd5ca66224672edcb3a
+Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
