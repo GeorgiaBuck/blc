@@ -1,8 +1,7 @@
 Blc::Application.routes.draw do
 
-  get "sessions/new"
-	get "home/index"
- 
+	get "home/index" 
+	get "sessions/new"
 
 	resources :ministries
   resources :users
@@ -23,7 +22,7 @@ Blc::Application.routes.draw do
   resources :addresses
 
   resources :members
-	match '/signup', 			:to => 'members#new'
+#	match '/signup', 			:to => 'members#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

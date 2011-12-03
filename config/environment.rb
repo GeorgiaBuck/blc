@@ -1,4 +1,4 @@
-ENV['RAILS_ENV'] ||='development'
+ENV['RAILS_ENV'] ||='production'
 
 # Initialize the rails application
 Blc::Application.initialize!
