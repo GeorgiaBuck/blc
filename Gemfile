@@ -9,12 +9,13 @@ gem 'rails', '3.0.6'
 gem 'will_paginate'
 
 group :development do
+	gem 'sqlite3'
 	gem 'faker'
 	gem 'rake'
 end
 
 group :production do
-
+	gem 'pg'
 end
 	
 # Use unicorn as the web server
@@ -24,8 +25,6 @@ end
 
 gem 'capistrano'
 gem 'thin'
-
-gem 'pg'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
